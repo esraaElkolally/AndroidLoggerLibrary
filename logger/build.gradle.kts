@@ -48,7 +48,7 @@ afterEvaluate {
             create<MavenPublication>("maven") {
                 groupId = "com.github.esraaElkolally"
                 artifactId = "logger-lib"
-                version = "1.0"
+                version = "1.1"
                 from(components["release"])
             }
         }
