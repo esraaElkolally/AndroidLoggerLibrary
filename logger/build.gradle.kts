@@ -25,8 +25,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
         jvmTarget = "11"
@@ -48,7 +48,7 @@ afterEvaluate {
             create<MavenPublication>("maven") {
                 groupId = "com.github.esraaElkolally"
                 artifactId = "logger-lib"
-                version = "1.1"
+                version = "1.2"
                 from(components["release"])
             }
         }
